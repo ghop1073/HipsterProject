@@ -13,7 +13,7 @@ public class Hipster
 		this.hipsterPhrases = new String[4];
 		this.hipsterBooks = new Book[3];
 		setupArray();
-		setupBooks();
+	
 		
 	}
 	
@@ -22,6 +22,17 @@ public class Hipster
 		
 	}
 	
+	private void setupBooks()
+	{
+		Book firstBook, secondBook, thirdBook;
+		
+		firstBook = new Book();
+		firstBook.setAuthor("Nick Haynes");
+		firstBook.setTitle("BTD5");
+		firstBook.setSubject("Gaming");
+		firstBook.setPageCount("100");
+		firstBook.setPrice("Free!!");
+	}
 	public String getName()
 	{
 		return name;
@@ -32,11 +43,11 @@ public class Hipster
 	}
 	public String[] getHisterPhrases()
 	{
-		return histerPhrases;
+		return hipsterPhrases;
 	}
 	public void setHisterPhrases(String[] histerPhrases)
 	{
-		this.histerPhrases = histerPhrases;
+		this.hipsterPhrases = histerPhrases;
 	}
 	public Book[] getHipsterBooks()
 	{
